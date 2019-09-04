@@ -40,7 +40,6 @@ class MS_Face_Processor:
             wr = csv.writer(fp)
             wr.writerow(row)
         
-
     def find_face_emotions(self):
         i = 0
         start = time.time()
@@ -68,5 +67,5 @@ class MS_Face_Processor:
                 self.save_result_to_file(result, filename.split('/')[-1])
 
 if __name__ == "__main__":
-    model = MS_Face_Processor('../Data/FACES_middle_a/', '../Outputs/MS_Face/FACES_middle_a.csv')
+    model = MS_Face_Processor('../Data/FACES_young_a/', '../Outputs/MS_Face/FACES_young_a.csv')
     model.find_face_emotions()
