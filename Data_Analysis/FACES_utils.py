@@ -9,3 +9,4 @@ emotion_map = {
 def emotion_from_filename(filename):
     emotion_initial = filename.split('_')[-2]
     return emotion_map[emotion_initial]
+    

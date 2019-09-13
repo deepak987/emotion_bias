@@ -1,6 +1,6 @@
 import pandas as pd 
 from FACES_utils import emotion_from_filename
-class MS_Face_Analyzer:
+class MS_Face_Processor:
     """
     Convert the raw API result to a usable form
     """
