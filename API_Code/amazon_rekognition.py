@@ -2,7 +2,7 @@ import boto3
 import csv
 from utils import all_images_in_directory
 import pandas as pd
-class Amazon_Rekognition_Processor:
+class Amazon_Rekognition_Interface:
     
     
 
@@ -52,6 +52,6 @@ class Amazon_Rekognition_Processor:
 
 
 if __name__ == "__main__":
-    model = Amazon_Rekognition_Processor('../Data/FACES_middle_a/', '../Outputs/Amazon_Rekognition/FACES_middle_a.csv')
+    model = Amazon_Rekognition_Interface('../Data/FACES_middle_a/', '../Outputs/Amazon_Rekognition/FACES_middle_a.csv')
     model.find_face_emotions()
 
