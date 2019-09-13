@@ -7,7 +7,7 @@ import time
 import csv
 import pandas as pd
 
-class MS_Face_Processor:
+class MS_Face_Interface:
     subscription_key = get_secret('MS_API_KEY')
     face_api_url = 'https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect'
     headers = {
@@ -67,5 +67,5 @@ class MS_Face_Processor:
                 self.save_result_to_file(result, filename.split('/')[-1])
 
 if __name__ == "__main__":
-    model = MS_Face_Processor('../Data/FACES_young_a/', '../Outputs/MS_Face/FACES_young_a.csv')
+    model = MS_Face_Interface('../Data/FACES_young_a/', '../Outputs/MS_Face/FACES_young_a.csv')
     model.find_face_emotions()
